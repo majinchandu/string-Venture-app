@@ -43,7 +43,7 @@ const BookListAdmin = () => {
     useEffect(() => {
         const fetchBooks = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/booklist`);
+                const response = await fetch(`https://string-venture-app.onrender.com/booklist`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -67,7 +67,7 @@ const BookListAdmin = () => {
 
         try {
             console.log(bookId, userId);
-            const response = await fetch(`http://localhost:5000/borrowBook`, {
+            const response = await fetch(`https://string-venture-app.onrender.com/borrowBook`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -112,7 +112,7 @@ const BookListAdmin = () => {
 
         try {
             // Make API request to delete the book
-            const response = await fetch(`http://localhost:5000/deleteBook/${bookId}`, {
+            const response = await fetch(`https://string-venture-app.onrender.com/deleteBook/${bookId}`, {
                 method: 'DELETE',
             });
 
@@ -137,7 +137,7 @@ const BookListAdmin = () => {
         }
 
         try {
-            const response = await fetch("http://localhost:5000/addBook", {
+            const response = await fetch("https://string-venture-app.onrender.com/addBook", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
