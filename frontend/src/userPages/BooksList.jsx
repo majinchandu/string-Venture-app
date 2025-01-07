@@ -48,7 +48,7 @@ const BooksList = () => {
     useEffect(() => {
         const fetchBooks = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/booklist`);
+                const response = await fetch(`https://string-venture-app.onrender.com/booklist`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -81,7 +81,7 @@ const BooksList = () => {
 
         try {
             console.log(bookId, userId);
-            const response = await fetch(`http://localhost:5000/borrowBook`, {
+            const response = await fetch(`https://string-venture-app.onrender.com/borrowBook`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
