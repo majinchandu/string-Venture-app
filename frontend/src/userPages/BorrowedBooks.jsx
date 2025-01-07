@@ -20,7 +20,7 @@ function BorrowedBooks() {
                 const userId = JSON.parse(auth).result._id;
                 console.log(userId);
 
-                const response = await fetch(`http://localhost:5000/borrowedBooks/${userId}`);
+                const response = await fetch(`https://string-venture-app.onrender.com/borrowedBooks/${userId}`);
                 const data = await response.json();
 
                 if (response.ok) {
@@ -41,7 +41,7 @@ function BorrowedBooks() {
 
     const handleReturn = async (borrowedBookId) => {
         try {
-            const response = await fetch(`http://localhost:5000/returnBook/${borrowedBookId}`, {
+            const response = await fetch(`https://string-venture-app.onrender.com/returnBook/${borrowedBookId}`, {
                 method: "DELETE",
             });
 
