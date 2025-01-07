@@ -61,7 +61,7 @@ For the frontend, navigate to the frontend directory and run:
 The application should now be running locally on your browser.
 
 Usage
-Sign Up / Log In: Users need to sign up and log in to interact with the system.
-Browse and Manage Books: Users can browse and borrow  available books and perform various actions based on their role (user/admin).
+  Sign Up / Log In: Users need to sign up and log in to interact with the system.
+  Browse and Manage Books: Users can browse and borrow  available books and perform various actions based on their role (user/admin).
 
 This is a Assignment for hiring process for String Venture on-campus placement 
