@@ -1,3 +1,5 @@
+String Venture Assignment for Full Stack Developer at DTU placements 
+
 Library Management System
 This project is a Library Management System built using the MERN stack (MongoDB, Express, React, Node.js) with Bootstrap for the frontend. It allows users to manage and interact with books in the library, including features for browsing, adding, and managing books.
 
